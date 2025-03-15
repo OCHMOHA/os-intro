@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 5: Менеджер паролей pass</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        .slide { display: none; padding: 50px; height: 100vh; box-sizing: border-box; }
+        .active { display: block; }
+        .controls { position: fixed; bottom: 20px; width: 100%; }
+        button { padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <div class="slide active">
+        <h1>Лабораторная работа 5</h1>
+        <h2>Менеджер паролей pass</h2>
+        <h3>Оушен Мухаммад Ламин</h3>
+    </div>
+
+    <div class="slide">
+        <h2>Цель работы</h2>
+        <p>Получение навыков правильной работы с репозиториями Git.</p>
+    </div>
+
+    <div class="slide">
+        <h2>Теоретические сведения</h2>
+        <ul>
+            <li>Gitflow Workflow популяризирован Винсентом Дриссеном.</li>
+            <li>Использует строгую модель ветвления.</li>
+            <li>Включает создание отдельных веток для релизов и исправлений.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>Gitflow: Основные этапы</h2>
+        <ul>
+            <li>Создание ветки develop из master.</li>
+            <li>Создание ветки release из develop.</li>
+            <li>Создание feature-веток из develop.</li>
+            <li>Слияние feature в develop, release в master.</li>
+            <li>Использование hotfix
+для исправления багов.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>Команды для установки</h2>
+        <p>Используем команду <strong>pass</strong> для управления паролями.</p>
+        <p>Также доступен <strong>gopass</strong> – GUI-версия pass.</p>
+    </div>
+
+    <div class="slide">
+        <h2>Работа с хранилищем</h2>
+        <ul>
+            <li>Генерация GPG-ключа.</li>
+            <li>Инициализация хранилища.</li>
+            <li>Синхронизация с Git.</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>Вывод</h2>
+        <p>Менеджер паролей <strong>pass</strong> – удобный инструмент для безопасного хранения паролей с GPG-шифрованием и интеграцией с Git.</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">⟨ Назад</button>
+        <button onclick="nextSlide()">Вперёд ⟩</button>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function prevSlide() { showSlide(currentSlide - 1); }
+        function nextSlide() { showSlide(currentSlide + 1); }
+    </script>
+
+</body>
+</html>

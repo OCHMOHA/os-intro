@@ -5,91 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторная работа 5: Менеджер паролей pass</title>
     <style>
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа 5: Менеджер паролей pass</title>
-    <style>
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        / Slide Container /
-        .slide {
-            display: none;
-            width: 80%;
-            max-width: 900px;
-            text-align: center;
-            padding: 50px;
-            border-radius: 10px;
-            background: rgba(40, 40, 40, 0.9);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        .slide { display: none; padding: 50px; height: 100vh; box-sizing: border-box; }
         .active { display: block; }
-
-        .controls {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-        }
-
-        button {
-            background: #2196F3;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 5px;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #1E88E5;
-        }
-
-        / Image Styling */
-        img {
-            max-width: 80%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .controls { position: fixed; bottom: 20px; width: 100%; }
+        button { padding: 10px 20px; font-size: 16px; }
+        img { max-width: 80%; height: auto; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -109,13 +30,13 @@
         <h2>Gitflow Workflow</h2>
         <p>Популяризирован Винсентом Дриссеном.</p>
         <p>Использует строгую модель ветвления.</p>
-        <img src="01.png" alt="Gitflow схема">
+        <img src="gitflow_diagram.png" alt="Gitflow схема">
     </div>
 
     <div class="slide">
         <h2>Команды для установки</h2>
         <p>Используем команду <strong>pass</strong> для управления паролями.</p>
-        <img src="02.png" alt="Установка pass">
+        <img src="image1.png" alt="Установка pass">
     </div>
 
     <div class="slide">
@@ -125,19 +46,18 @@
             <li>Инициализация хранилища.</li>
             <li>Синхронизация с Git.</li>
         </ul>
-        <img src="03.png" alt="Инициализация хранилища">
+        <img src="image2.png" alt="Инициализация хранилища">
     </div>
 
     <div class="slide">
         <h2>Настройка интерфейса</h2>
         <p>Интеграция с браузером через Native Messaging.</p>
-        <img src="04.png" alt="Настройка интерфейса">
+        <img src="image3.png" alt="Настройка интерфейса">
     </div>
 
     <div class="slide">
         <h2>Вывод</h2>
-        <p>Менеджер паролей
-<strong>pass</strong> – удобный инструмент для безопасного хранения паролей с GPG-шифрованием и интеграцией с Git.</p>
+        <p>Менеджер паролей <strong>pass</strong> – удобный инструмент для безопасного хранения паролей с GPG-шифрованием и интеграцией с Git.</p>
     </div>
 
     <div class="controls">

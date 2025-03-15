@@ -3,140 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа 5: Менеджер паролей pass</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Slide Container */
-        .slide {
-            display: none;
-            width: 80%;
-            max-width: 900px;
-            text-align: center;
-            padding: 50px;
-            border-radius: 10px;
-            background: rgba(40, 40, 40, 0.9);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .active { display: block; }
-
-        /* Navigation Buttons */
-        .controls {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-        }
-
-        button {
-            background: #2196F3;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin: 5px;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background: #1E88E5;
-        }
-
-        /* Image Styling */
-        img {
-            max-width: 80%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+    <title>Лабораторная работа 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 </head>
 <body>
 
-    <div class="slide active">
-        <h1>Лабораторная работа 5</h1>
-        <h2>Менеджер паролей pass</h2>
-        <h3>Оушен Мухаммад Ламин</h3>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title -->
+            <section>
+                <h1>Лабораторная работа 5</h1>
+                <h2>Менеджер паролей pass</h2>
+                <h3>Оушен Мухаммад Ламин</h3>
+            </section>
+
+            <!-- Slide 2: Цель работы -->
+            <section>
+                <h2>Цель работы</h2>
+                <p>Получение навыков правильной работы с репозиториями Git.</p>
+            </section>
+
+            <!-- Slide 3: Gitflow -->
+            <section>
+                <h2>Gitflow Workflow</h2>
+                <p>Популяризирован Винсентом Дриссеном.</p>
+                <p>Использует строгую модель ветвления.</p>
+                <img src="gitflow_diagram.png" alt="Gitflow схема">
+            </section>
+
+            <!-- Slide 4: Установка pass -->
+            <section>
+                <h2>Команды для установки</h2>
+                <p>Используем команду <strong>pass</strong> для управления паролями.</p>
+                <img src="image1.png" alt="Установка pass">
+            </section>
+
+            <!-- Slide 5: Работа с хранилищем -->
+            <section>
+                <h2>Работа с хранилищем</h2>
+                <ul>
+                    <li>Генерация GPG-ключа.</li>
+                    <li>Инициализация хранилища.</li>
+                    <li>Синхронизация с Git.</li>
+                </ul>
+                <img src="image2.png" alt="Инициализация хранилища">
+            </section>
+
+            <!-- Slide 6: Настройка интерфейса -->
+            <section>
+                <h2>Настройка интерфейса</h2>
+                <p>Интеграция с браузером через Native Messaging.</p>
+                <img src="image3.png" alt="Настройка интерфейса">
+            </section>
+
+            <!-- Slide 7: Вывод -->
+            <section>
+                <h2>Вывод</h2>
+                <p>Менеджер паролей <strong>pass</strong> – удобный инструмент для безопасного хранения паролей с GPG-шифрованием и интеграцией с Git.</p>
+            </section>
+        </div>
     </div>
 
-    <div class="slide">
-        <h2>Цель работы</h2>
-        <p>Получение навыков правильной работы с репозиториями Git.</p>
-    </div>
-
-    <div class="slide">
-        <h2>Gitflow Workflow</h2>
-        <p>Популяризирован Винсентом Дриссеном.</p>
-        <p>Использует строгую модель ветвления.</p>
-    </div>
-
-    <div class="slide">
-        <h2>Команды для установки</h2>
-        <p>Используем команду <strong>pass</strong> для управления паролями.</p>
-        <img src="image/01.png" alt="Установка pass">
-    </div>
-
-    <div class="slide">
-        <h2>Работа с хранилищем</h2>
-        <ul>
-            <li>Генерация GPG-ключа.</li>
-            <li>Инициализация хранилища.</li>
-            <li>Синхронизация с Git.</li>
-        </ul>
-        <img src="image2.png" alt="Инициализация хранилища">
-    </div>
-
-    <div class="slide">
-        <h2>Настройка интерфейса</h2>
-        <p>Интеграция с браузером через Native Messaging.</p>
-        <img src="image3.png" alt="Настройка интерфейса">
-    </div>
-
-    <div class="slide">
-        <h2>Вывод</h2>
-        <p>Менеджер паролей <strong>pass</strong> – удобный инструмент для безопасного хранения паролей с GPG-шифрованием и интеграцией с Git.</p>
-    </div>
-
-    <div class="controls">
-        <button onclick="prevSlide()">⟨ Назад</button>
-        <button onclick="nextSlide()">Вперёд ⟩</button>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
     <script>
-        let slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (index + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-
-        function prevSlide() { showSlide(currentSlide - 1); }
-        function nextSlide() { showSlide(currentSlide + 1); }
+        Reveal.initialize();
     </script>
 
 </body>
